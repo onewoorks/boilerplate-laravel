@@ -6,19 +6,19 @@ Other than that, Laravel package included is Laratrust - used for ACL, Collectiv
 
 ## Installation
 
-Clone this repository and run the following command
+Run the following command
 
-	composer install
+	composer create-project nasrulhazim/boilerplate-laravel your-project-name
+
+If you were asked to remove Git history, just choose `Y`.
 
 ## Configuration
 
-Duplicate `.env.example` to `.env` and configure your database name, username and password
+Open `.env` and configure your database name, username and password
 
-Run the following command to configure authentication, authorization and seeding default ACL
+Run the following command to setup the database tables and seeding default ACL
 
-	php artisan make:auth
-	php artisan migrate
-	php artisan db:seed
+	php artisan migrate && php artisan db:seed
 
 You may run `php artisan serve` to start using the Boilerplate for Laravel Web Application
 
